@@ -18,12 +18,17 @@ import unittest
 #     unittest.main()
 import pytest
 
+
 def func(x):
     return x + 1
 
 
 def test_answer():
     assert func(3) == 5
+
+
+def test_new():
+    assert func(4) == 5
 
 
 # content of test_sysexit.py
@@ -38,20 +43,20 @@ def test_mytest():
     with pytest.raises(SystemExit):
         f()
 
-# def test_success():
-#     """this test succeeds"""
-#     assert True
-#
-#
-# def test_failure():
-#     """this test fails"""
-#     assert False
-#
-#
-# def test_skip():
-#     """this test is skipped"""
-#     pytest.skip('for a reason!')
-#
-#
-# def test_broken():
-#     raise Exception('oops')
+        # def test_success():
+        #     """this test succeeds"""
+        #     assert True
+        #
+        #
+        # def test_failure():
+        #     """this test fails"""
+        #     assert False
+        #
+        #
+        # def test_skip():
+        #     """this test is skipped"""
+        #     pytest.skip('for a reason!')
+        #
+        #
+        # def test_broken():
+        #     raise Exception('oops')
